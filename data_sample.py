@@ -3,7 +3,8 @@ import requests
 from datetime import datetime, timedelta 
 import re
 import csv 
- 
+import matplotlib.pyplot as plt
+
 end_date = datetime.today().date() 
 start_date = end_date - timedelta(days=90) 
  
@@ -82,3 +83,4 @@ with open(csv_filename, mode='w', newline='', encoding='utf-8') as file:
 
     for r, m, t, d in zip(final_data["region"], final_data["mag"], final_data["time"], final_data["depth"]):
         writer.writerow([r, m, t, d])
+
