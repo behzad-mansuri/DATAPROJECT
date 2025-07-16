@@ -1,4 +1,8 @@
 time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2025-07-16T02:12:09.578Z,42.0227,139.4476,194.301,4.7,mb,53,55,1.731,0.75,us,us7000qcxi,2025-07-16T02:24:30.040Z,"57 km W of Otobe, Japan",earthquake,8.54,8.46,0.08,47,reviewed,us,us
+2025-07-15T17:15:25.883Z,29.2567,129.4337,10,5.2,mb,77,79,2.411,0.77,us,us7000qctb,2025-07-15T17:42:07.040Z,"90 km N of Tatsugō, Japan",earthquake,6.1,1.804,0.074,66,reviewed,us,us
+2025-07-15T14:47:11.172Z,36.4801,140.6182,58.656,4.9,mww,166,121,1.942,0.74,us,us7000qcsr,2025-07-15T23:56:38.993Z,"4 km ENE of Funaishikawa, Japan",earthquake,6.55,6.533,0.083,14,reviewed,us,us
+2025-07-15T04:20:00.711Z,29.3199,129.4637,10,5.2,mww,62,85,2.343,0.82,us,us7000qcqt,2025-07-15T04:32:36.040Z,"97 km N of Tatsugō, Japan",earthquake,7.65,1.892,0.08,15,reviewed,us,us
 2025-07-14T16:53:18.432Z,30.3071,140.8477,10,4.8,mb,78,100,2.935,0.79,us,us7000qcln,2025-07-14T17:52:05.040Z,"Izu Islands, Japan region",earthquake,8.68,1.855,0.043,169,reviewed,us,us
 2025-07-13T23:32:15.783Z,29.3319,129.5466,10,4.5,mb,45,119,2.307,0.45,us,us7000qchf,2025-07-14T05:05:14.040Z,"97 km N of Tatsugō, Japan",earthquake,8.44,1.903,0.089,37,reviewed,us,us
 2025-07-13T18:36:45.071Z,28.1811,131.0871,10,4.4,mb,27,138,2.355,0.93,us,us7000qcg8,2025-07-13T19:13:50.040Z,"148 km ESE of Tatsugō, Japan",earthquake,5.86,1.905,0.155,12,reviewed,us,us
@@ -10,6 +14,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-07-12T02:00:45.747Z,29.362,129.3745,10,4.8,mb,33,109,2.334,0.92,us,us7000qc6p,2025-07-12T02:35:31.040Z,"103 km NNW of Tatsugō, Japan",earthquake,7.73,1.902,0.111,25,reviewed,us,us
 2025-07-12T01:07:35.959Z,41.5581,141.9449,66.169,4.3,mb,39,148,1.015,0.71,us,us7000qc6i,2025-07-12T02:13:34.040Z,"67 km ENE of Mutsu, Japan",earthquake,7.01,10.267,0.104,26,reviewed,us,us
 2025-07-11T18:44:00.104Z,42.6833,143.1997,21.046,4.2,mb,49,124,0.669,0.65,us,us7000qc4t,2025-07-11T21:00:36.040Z,"3 km NNE of Sarabetsu, Japan",earthquake,6.43,5.471,0.093,33,reviewed,us,us
+2025-07-11T10:58:19.957Z,24.0468,125.8735,10,4.4,mwr,48,116,1.532,0.69,us,us7000qc08,2025-07-16T10:15:48.040Z,"100 km SE of Miyakojima, Japan",earthquake,7.94,1.901,0.093,11,reviewed,us,us
 2025-07-11T07:30:16.677Z,29.3552,129.3198,10,4.8,mww,43,73,2.359,0.77,us,us7000qbza,2025-07-11T07:51:38.040Z,"103 km NNW of Tatsugō, Japan",earthquake,7.56,1.885,0.098,10,reviewed,us,us
 2025-07-11T07:21:39.552Z,29.3195,129.1987,10,5,mb,36,105,2.436,1.15,us,us7000qbz8,2025-07-11T07:45:42.040Z,"104 km NNW of Tatsugō, Japan",earthquake,7.18,1.791,0.055,104,reviewed,us,us
 2025-07-11T07:09:08.878Z,29.2165,129.5004,10,4.6,mb,43,106,2.429,1.23,us,us7000qbz9,2025-07-11T08:19:16.040Z,"85 km N of Tatsugō, Japan",earthquake,5.79,1.896,0.092,35,reviewed,us,us
@@ -44,7 +49,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-07-04T17:58:00.523Z,29.3301,129.5469,10,4.7,mww,59,106,2.308,0.89,us,us7000qaqc,2025-07-04T18:44:22.040Z,"97 km N of Tatsugō, Japan",earthquake,6.84,1.868,0.073,18,reviewed,us,us
 2025-07-04T12:31:53.239Z,39.5004,143.6902,10,4.3,mb,34,127,2.389,1.05,us,us7000qamh,2025-07-04T13:32:40.040Z,"149 km E of Yamada, Japan",earthquake,7.62,1.763,0.122,19,reviewed,us,us
 2025-07-04T09:20:01.131Z,29.4033,129.4367,10,4.7,mb,75,109,2.275,0.74,us,us7000qam0,2025-07-04T09:39:43.040Z,"106 km N of Tatsugō, Japan",earthquake,6.51,1.663,0.052,111,reviewed,us,us
-2025-07-04T07:56:47.564Z,39.6557,141.9821,56.852,4.2,mb,45,135,1.333,0.69,us,us7000qalu,2025-07-04T08:28:52.040Z,"3 km ENE of Miyako, Japan",earthquake,8.22,8.317,0.103,26,reviewed,us,us
+2025-07-04T07:56:48.327Z,39.6264,141.9049,65.91,4.2,mb,46,135,1.328,0.72,us,us7000qalu,2025-07-16T08:14:53.040Z,"3 km SW of Miyako, Japan",earthquake,6.33,8.008,0.098,29,reviewed,us,us
 2025-07-04T04:06:02.156Z,31.5767,131.676,45.897,4.3,mb,17,191,1.047,0.85,us,us7000qakq,2025-07-05T21:50:53.040Z,"29 km E of Nichinan, Japan",earthquake,6.45,11.762,0.153,12,reviewed,us,us
 2025-07-04T03:20:26.306Z,29.3382,129.3278,10,4.5,mb,35,108,2.372,0.73,us,us7000qakl,2025-07-04T03:46:57.040Z,"101 km NNW of Tatsugō, Japan",earthquake,7.92,1.902,0.112,23,reviewed,us,us
 2025-07-04T00:02:56.297Z,29.3324,129.4164,10,4.5,mb,45,112,2.347,0.61,us,us7000qajx,2025-07-04T01:20:35.040Z,"99 km N of Tatsugō, Japan",earthquake,6,1.65,0.077,53,reviewed,us,us
@@ -57,7 +62,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-07-03T05:31:06.456Z,29.3026,129.5498,10,4.8,mb,51,109,2.333,0.66,us,us7000qad4,2025-07-03T07:09:37.040Z,"94 km N of Tatsugō, Japan",earthquake,6.56,1.875,0.044,162,reviewed,us,us
 2025-07-02T21:51:30.242Z,29.353,129.4475,15.206,4.7,mb,47,109,2.318,0.63,us,us7000qabd,2025-07-02T23:26:15.040Z,"101 km N of Tatsugō, Japan",earthquake,6.15,3.882,0.054,103,reviewed,us,us
 2025-07-02T21:06:51.367Z,29.369,128.99,10,4.3,mb,33,107,2.479,0.29,us,us7000qaat,2025-07-02T23:23:12.040Z,"117 km NNW of Tatsugō, Japan",earthquake,6.93,1.908,0.109,24,reviewed,us,us
-2025-07-02T17:32:56.903Z,29.2416,129.2829,10,4.9,mww,89,88,2.476,0.66,us,us7000qa9g,2025-07-02T19:41:36.040Z,"93 km NNW of Tatsugō, Japan",earthquake,6.41,1.838,0.06,27,reviewed,us,us
+2025-07-02T17:32:57.020Z,29.2499,129.2434,10,4.9,mww,100,36,2.482,0.65,us,us7000qa9g,2025-07-14T21:26:59.040Z,"95 km NNW of Tatsugō, Japan",earthquake,6.31,1.832,0.06,27,reviewed,us,us
 2025-07-02T16:54:42.194Z,29.2009,129.0443,10,4.2,mb,34,103,2.453,1.16,us,us7000qc3j,2025-07-12T03:16:26.040Z,"99 km NNW of Tatsugō, Japan",earthquake,6.67,1.904,0.125,18,reviewed,us,us
 2025-07-02T16:12:33.598Z,29.1549,129.0816,10,4.3,mb,25,104,2.418,1.06,us,us7000qc3g,2025-07-12T03:08:30.040Z,"93 km NNW of Tatsugō, Japan",earthquake,5.82,1.799,0.168,10,reviewed,us,us
 2025-07-02T15:49:18.502Z,29.2684,129.2616,10,5.2,mww,83,78,2.459,1.01,us,us7000qa7e,2025-07-02T16:07:27.040Z,"96 km NNW of Tatsugō, Japan",earthquake,5.71,1.59,0.063,24,reviewed,us,us
@@ -72,7 +77,8 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-07-02T05:25:22.948Z,28.9658,129.4781,10,5.1,mb,64,66,2.375,1.19,us,us7000qa52,2025-07-02T05:46:57.040Z,"58 km NNW of Tatsugō, Japan",earthquake,6.48,1.877,0.045,161,reviewed,us,us
 2025-07-02T05:22:17.159Z,29.2434,129.2687,10,4.6,mb,57,88,2.479,1.08,us,us7000qa4z,2025-07-02T06:50:25.040Z,"93 km NNW of Tatsugō, Japan",earthquake,2.83,1.871,0.078,49,reviewed,us,us
 2025-07-02T03:34:44.866Z,29.4228,129.5721,10,4.2,mb,25,117,2.214,1.23,us,us7000qc2x,2025-07-12T02:48:13.040Z,"107 km N of Tatsugō, Japan",earthquake,7.82,1.917,0.118,20,reviewed,us,us
-2025-07-02T00:06:48.034Z,29.2677,129.3371,10,4.9,mb,61,105,2.433,0.51,us,us7000qa3f,2025-07-02T01:10:41.040Z,"94 km NNW of Tatsugō, Japan",earthquake,5.47,1.821,0.048,136,reviewed,us,us
+2025-07-02T00:14:30.991Z,29.0741,129.6197,10,4.5,mb,29,130,2.528,0.94,us,us7000qc2z,2025-07-14T23:40:25.040Z,"69 km N of Tatsugō, Japan",earthquake,7.82,1.907,0.145,14,reviewed,us,us
+2025-07-02T00:06:47.862Z,29.2796,129.3143,10,4.9,mb,67,85,2.43,0.58,us,us7000qa3f,2025-07-14T23:26:53.040Z,"96 km NNW of Tatsugō, Japan",earthquake,2.47,1.825,0.048,139,reviewed,us,us
 2025-07-01T21:31:46.284Z,29.3579,129.4597,13.975,4.6,mb,52,91,2.309,0.52,us,us7000qa2m,2025-07-01T23:04:16.040Z,"101 km N of Tatsugō, Japan",earthquake,7.14,4.503,0.091,36,reviewed,us,us
 2025-07-01T20:18:05.835Z,30.5618,130.9918,45.075,4.7,mb,71,138,1.052,0.69,us,us7000qa28,2025-07-13T13:57:21.040Z,"19 km S of Nishinoomote, Japan",earthquake,10.93,5.62,0.057,95,reviewed,us,us
 2025-07-01T19:36:49.959Z,26.6088,141.9373,10,4.4,mb,16,151,0.533,0.84,us,us7000qc26,2025-07-13T18:59:30.040Z,"Bonin Islands, Japan region",earthquake,6.24,1.948,0.179,11,reviewed,us,us
@@ -87,7 +93,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-06-30T15:22:27.163Z,29.296,129.4353,10,4.6,mb,61,57,2.374,1,us,us7000q9rm,2025-07-10T18:56:50.040Z,"95 km N of Tatsugō, Japan",earthquake,6.83,1.85,0.091,36,reviewed,us,us
 2025-06-30T09:33:22.335Z,29.3206,129.392,10,5.2,mww,106,62,2.366,1.04,us,us7000q9q4,2025-06-30T09:52:56.040Z,"98 km NNW of Tatsugō, Japan",earthquake,6.07,1.841,0.069,20,reviewed,us,us
 2025-06-30T04:32:42.421Z,33.1244,138.1086,308.605,4.2,mb,52,96,1.431,0.67,us,us7000q9ni,2025-06-30T04:49:42.040Z,"164 km S of Ōyama, Japan",earthquake,9.24,7.1,0.045,135,reviewed,us,us
-2025-06-30T03:36:19.776Z,29.2747,129.4036,10,4.7,mww,83,108,2.404,0.66,us,us7000q9nf,2025-06-30T03:59:36.040Z,"93 km NNW of Tatsugō, Japan",earthquake,6.11,1.221,0.093,11,reviewed,us,us
+2025-06-30T03:36:19.940Z,29.3258,129.3647,10,4.7,mww,97,109,2.37,0.46,us,us7000q9nf,2025-07-16T05:15:08.040Z,"99 km NNW of Tatsugō, Japan",earthquake,6.29,1.864,0.093,11,reviewed,us,us
 2025-06-29T17:58:52.726Z,29.3117,129.4362,10,4.3,mb,31,110,2.36,0.73,us,us7000q9lj,2025-07-11T16:50:10.040Z,"96 km N of Tatsugō, Japan",earthquake,4.87,1.835,0.133,16,reviewed,us,us
 2025-06-29T13:36:53.514Z,29.396,129.3403,28.232,4.4,mb,33,109,2.315,0.77,us,us7000qbu6,2025-07-14T16:23:27.040Z,"107 km NNW of Tatsugō, Japan",earthquake,4.8,5.412,0.114,26,reviewed,us,us
 2025-06-29T11:26:56.688Z,43.5606,144.6264,127.861,4.2,mb,59,143,1.574,0.89,us,us7000q9ia,2025-06-29T13:44:23.040Z,"13 km NE of Teshikaga, Japan",earthquake,8.23,7.539,0.061,76,reviewed,us,us
@@ -111,8 +117,9 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-06-25T05:47:25.830Z,29.3455,129.404,10,4.5,mb,44,111,2.339,0.96,us,us7000q8m5,2025-06-25T06:52:59.040Z,"101 km N of Tatsugō, Japan",earthquake,4.93,1.9,0.078,48,reviewed,us,us
 2025-06-25T04:51:28.873Z,36.5056,140.5946,62.943,4.4,mb,48,148,1.926,0.74,us,us7000q8lu,2025-07-13T04:03:43.102Z,"4 km NNE of Funaishikawa, Japan",earthquake,3.21,8.268,0.093,33,reviewed,us,us
 2025-06-25T00:45:17.121Z,30.0272,131.2318,35,4.5,mb,27,141,1.622,0.51,us,us7000qb0u,2025-07-07T22:19:47.040Z,"68 km SE of Koseda, Japan",earthquake,4.87,1.938,0.124,19,reviewed,us,us
-2025-06-24T07:54:09.921Z,29.2614,129.3311,10,4.5,mb,31,108,2.441,0.52,us,us7000q8dm,2025-06-24T08:15:26.040Z,"93 km NNW of Tatsugō, Japan",earthquake,7.91,1.925,0.118,21,reviewed,us,us
-2025-06-24T07:04:14.585Z,29.3428,129.3271,10,5.3,mb,78,94,2.368,0.92,us,us7000q8dd,2025-06-24T07:24:38.040Z,"102 km NNW of Tatsugō, Japan",earthquake,5.55,1.862,0.028,429,reviewed,us,us
+2025-06-24T13:03:33.716Z,29.3138,129.4862,10,4.2,mb,22,116,2.342,0.83,us,us7000qawf,2025-07-16T19:08:22.040Z,"96 km N of Tatsugō, Japan",earthquake,7.54,1.909,0.152,12,reviewed,us,us
+2025-06-24T07:54:09.531Z,29.2029,129.3592,10,4.5,mb,37,108,2.485,0.47,us,us7000q8dm,2025-07-16T14:10:18.040Z,"86 km NNW of Tatsugō, Japan",earthquake,7.24,1.89,0.108,25,reviewed,us,us
+2025-06-24T07:04:14.355Z,29.3177,129.3656,10,5.1,mww,93,85,2.377,1.02,us,us7000q8dd,2025-07-15T06:24:17.040Z,"98 km NNW of Tatsugō, Japan",earthquake,6.06,1.816,0.08,15,reviewed,us,us
 2025-06-23T17:55:12.519Z,42.2035,144.6299,34.552,4.8,mb,77,126,1.112,0.91,us,us7000q88q,2025-07-05T17:38:06.040Z,"88 km SSE of Kushiro, Japan",earthquake,7.79,5.519,0.041,183,reviewed,us,us
 2025-06-23T17:23:29.381Z,29.3425,129.3401,10,5,mww,58,87,2.364,0.72,us,us7000q88k,2025-07-05T17:31:08.040Z,"102 km NNW of Tatsugō, Japan",earthquake,5.12,1.84,0.059,28,reviewed,us,us
 2025-06-23T15:08:19.044Z,29.0712,129.8683,10,4.4,mb,26,117,2.482,0.67,us,us7000qapv,2025-07-08T15:56:17.040Z,"73 km NNE of Tatsugō, Japan",earthquake,8.25,1.915,0.138,15,reviewed,us,us
@@ -122,15 +129,16 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-06-23T13:45:23.189Z,29.2758,129.5665,10,4.3,mb,39,112,2.354,0.64,us,us7000qapq,2025-07-08T15:32:36.040Z,"91 km N of Tatsugō, Japan",earthquake,5.37,1.916,0.104,26,reviewed,us,us
 2025-06-23T13:40:48.266Z,29.3616,129.3346,10,4.4,mb,50,108,2.348,0.6,us,us6000qlyg,2025-07-08T15:14:14.040Z,"104 km NNW of Tatsugō, Japan",earthquake,7.27,1.834,0.095,32,reviewed,us,us
 2025-06-23T09:40:49.499Z,41.9926,142.318,69.874,4.1,mb,45,107,0.626,0.55,us,us6000qlxb,2025-06-23T10:12:34.040Z,"38 km S of Shizunai-furukawachō, Japan",earthquake,5.74,3.232,0.094,31,reviewed,us,us
-2025-06-23T07:50:57.033Z,29.3175,129.5771,10,4.5,mb,42,112,2.312,0.49,us,us6000qlxp,2025-06-23T12:13:09.040Z,"96 km N of Tatsugō, Japan",earthquake,7.31,1.896,0.097,31,reviewed,us,us
-2025-06-23T07:46:16.042Z,29.2031,129.7089,10,4.9,mb,108,93,2.387,0.54,us,us6000qlx3,2025-06-23T12:36:01.040Z,"84 km N of Tatsugō, Japan",earthquake,6.22,1.794,0.057,97,reviewed,us,us
-2025-06-23T04:24:25.256Z,29.3077,129.3731,9.99,4.3,mb,23,123,2.384,0.35,us,us6000qlwq,2025-06-23T04:40:10.040Z,"97 km NNW of Tatsugō, Japan",earthquake,8.76,5.571,0.133,16,reviewed,us,us
+2025-06-23T07:50:56.991Z,29.3256,129.5979,10,4.5,mb,50,112,2.298,0.37,us,us6000qlxp,2025-07-16T13:02:59.040Z,"97 km N of Tatsugō, Japan",earthquake,5.49,1.886,0.089,37,reviewed,us,us
+2025-06-23T07:46:17.544Z,29.2136,129.5771,10,4.9,mb,118,85,2.41,0.42,us,us6000qlx3,2025-07-16T13:37:56.040Z,"84 km N of Tatsugō, Japan",earthquake,5.69,1.864,0.054,109,reviewed,us,us
+2025-06-23T04:45:56.278Z,29.2812,129.4483,10,4.3,mb,30,110,2.384,0.62,us,us7000qapa,2025-07-15T03:52:52.040Z,"93 km N of Tatsugō, Japan",earthquake,7.82,1.917,0.125,18,reviewed,us,us
+2025-06-23T04:24:26.298Z,29.2783,129.241,16.37,4.3,mb,32,108,2.458,0.33,us,us6000qlwq,2025-07-15T03:33:12.040Z,"98 km NNW of Tatsugō, Japan",earthquake,7.26,4.22,0.122,19,reviewed,us,us
 2025-06-23T01:16:11.252Z,29.2959,129.4315,16.063,4.2,mb,19,110,2.376,1.05,us,us7000qaq4,2025-07-14T04:23:30.040Z,"95 km N of Tatsugō, Japan",earthquake,8.51,5.266,0.167,10,reviewed,us,us
 2025-06-23T01:13:17.509Z,29.3266,129.2927,8.12,4.5,mb,70,108,2.395,0.36,us,us6000qlvq,2025-07-14T04:45:17.040Z,"101 km NNW of Tatsugō, Japan",earthquake,7.48,4.534,0.075,52,reviewed,us,us
-2025-06-22T21:33:00.349Z,41.4932,140.7274,157.278,4.1,mb,31,86,0.748,0.28,us,us6000qlun,2025-07-04T21:46:52.040Z,"13 km WNW of Sai, Japan",earthquake,9.57,8.701,0.12,19,reviewed,us,us
-2025-06-22T21:22:44.211Z,29.3039,129.2513,10,4.4,mb,35,79,2.431,0.83,us,us6000qlul,2025-07-04T21:31:01.040Z,"100 km NNW of Tatsugō, Japan",earthquake,4.85,1.907,0.114,22,reviewed,us,us
+2025-06-22T21:33:00.071Z,41.463,140.7428,155.513,4.2,mb,31,87,0.715,0.31,us,us6000qlun,2025-07-15T21:47:38.040Z,"10 km WNW of Sai, Japan",earthquake,9.62,8.483,0.12,19,reviewed,us,us
+2025-06-22T21:22:44.171Z,29.296,129.2675,10,4.4,mb,35,78,2.432,0.73,us,us6000qlul,2025-07-15T21:42:51.040Z,"99 km NNW of Tatsugō, Japan",earthquake,6.01,1.602,0.114,22,reviewed,us,us
 2025-06-22T18:32:42.215Z,29.3391,129.3935,10,4.7,mb,62,108,2.348,0.41,us,us6000qlu4,2025-07-05T16:57:46.040Z,"100 km NNW of Tatsugō, Japan",earthquake,6.97,1.878,0.057,93,reviewed,us,us
-2025-06-22T09:11:25.049Z,29.4063,130.6451,34.227,4.5,mb,41,109,2.103,0.74,us,us6000qlri,2025-06-22T09:33:19.040Z,"92 km S of Koshima, Japan",earthquake,7.15,4.376,0.106,26,reviewed,us,us
+2025-06-22T09:11:25.394Z,29.3483,130.5906,42.233,4.5,mb,43,108,2.157,0.64,us,us6000qlri,2025-07-15T12:51:06.040Z,"98 km S of Koshima, Japan",earthquake,6.79,8.102,0.097,31,reviewed,us,us
 2025-06-22T08:58:46.370Z,29.3883,129.4888,10,4.3,mb,36,114,6.847,0.78,us,us7000qap3,2025-07-10T11:09:17.040Z,"104 km N of Tatsugō, Japan",earthquake,11.37,1.82,0.097,30,reviewed,us,us
 2025-06-22T08:57:57.717Z,29.2121,129.4659,10,4.3,mb,25,123,2.443,0.91,us,us7000qand,2025-07-05T06:33:15.040Z,"85 km N of Tatsugō, Japan",earthquake,8.51,1.912,0.129,17,reviewed,us,us
 2025-06-22T08:29:52.049Z,29.2949,129.4832,10,4.2,mb,28,125,2.36,0.84,us,us7000qanb,2025-07-05T06:00:06.040Z,"94 km N of Tatsugō, Japan",earthquake,8.47,1.916,0.118,20,reviewed,us,us
@@ -145,6 +153,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-06-21T20:53:15.999Z,29.187,129.4981,10,4.7,mww,55,116,2.457,1.18,us,us6000qlny,2025-07-06T23:39:35.040Z,"82 km N of Tatsugō, Japan",earthquake,5.87,1.902,0.08,15,reviewed,us,us
 2025-06-21T20:25:41.605Z,29.2336,129.0476,10,4.4,mb,25,127,2.485,0.82,us,us7000qai1,2025-07-08T02:54:25.040Z,"102 km NNW of Tatsugō, Japan",earthquake,9.25,1.908,0.162,13,reviewed,us,us
 2025-06-21T20:24:36.444Z,29.3526,129.3488,10,4.5,mb,37,89,2.351,0.9,us,us6000qlnq,2025-07-06T04:06:44.040Z,"102 km NNW of Tatsugō, Japan",earthquake,7.28,1.907,0.089,37,reviewed,us,us
+2025-06-21T17:52:08.102Z,29.2727,129.4856,10,4.5,mb,93,108,2.381,0.53,us,us6000qlnb,2025-07-16T18:48:57.040Z,"91 km N of Tatsugō, Japan",earthquake,3.2,1.859,0.062,81,reviewed,us,us
 2025-06-21T14:10:56.603Z,29.3327,129.291,10,4.5,mb,42,66,2.39,0.72,us,us6000qlmi,2025-07-14T12:57:12.040Z,"102 km NNW of Tatsugō, Japan",earthquake,7.23,1.893,0.106,30,reviewed,us,us
 2025-06-20T18:09:48.229Z,31.3065,138.4408,363.726,4.4,mb,99,94,2.146,0.58,us,us6000qlhn,2025-07-12T21:34:51.040Z,"Izu Islands, Japan region",earthquake,7.5,7.322,0.05,120,reviewed,us,us
 2025-06-20T00:45:52.613Z,34.7355,140.7115,49.896,4.4,mb,21,156,1.78,0.78,us,us6000qlcz,2025-07-13T23:31:15.040Z,"58 km SE of Katsuura, Japan",earthquake,7.54,9.481,0.18,9,reviewed,us,us
@@ -208,7 +217,7 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-05-27T01:09:59.986Z,35.7227,140.5713,53.007,4.1,mb,15,228,0.464,0.55,us,us6000qjnx,2025-06-17T04:26:46.040Z,"1 km ENE of Sōsa, Japan",earthquake,8.31,9.604,0.213,6,reviewed,us,us
 2025-05-26T15:33:03.268Z,36.1364,141.1767,46.686,4.3,mb,24,161,2.43,0.93,us,us7000q1l0,2025-06-16T19:47:49.108Z,"51 km ENE of Kashima-shi, Japan",earthquake,9,9.216,0.161,11,reviewed,us,us
 2025-05-26T14:30:43.876Z,42.3166,142.9403,59.96,4.5,mb,136,66,0.342,0.62,us,us7000q1kp,2025-06-16T19:43:34.250Z,"20 km N of Honchō, Japan",earthquake,6.87,5.196,0.046,136,reviewed,us,us
-2025-05-26T08:47:44.810Z,42.2717,143.1349,64.997,5.3,mww,243,42,0.257,0.43,us,us7000q1ib,2025-06-19T09:47:02.004Z,"13 km W of Hiroo, Japan",earthquake,7.36,4.609,0.062,25,reviewed,us,us
+2025-05-26T08:47:44.855Z,42.2681,143.1149,65.431,5.3,mww,243,40,0.255,0.47,us,us7000q1ib,2025-07-16T07:11:08.040Z,"15 km W of Hiroo, Japan",earthquake,5.83,4.454,0.062,25,reviewed,us,us
 2025-05-26T00:56:16.171Z,38.4887,142.1333,35,4.4,mb,58,134,2.441,0.58,us,us7000q1gp,2025-06-17T22:50:38.378Z,"59 km E of Onagawa Chō, Japan",earthquake,8.54,1.928,0.084,41,reviewed,us,us
 2025-05-23T22:50:53.168Z,25.4627,141.9557,64.321,4.3,mb,13,148,1.639,1.31,us,us6000qi7u,2025-06-26T23:24:10.040Z,"Volcano Islands, Japan region",earthquake,15.02,10.217,0.201,8,reviewed,us,us
 2025-05-23T14:44:31.870Z,36.7938,141.287,43.945,4.5,mb,67,114,1.679,0.73,us,us7000q12t,2025-06-27T14:00:03.040Z,"45 km SE of Iwaki, Japan",earthquake,8.35,7.822,0.073,54,reviewed,us,us
@@ -286,5 +295,3 @@ time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,
 2025-04-17T23:57:35.002Z,33.2513,131.3791,10,4.2,mb,29,128,1.906,0.45,us,us6000q6xf,2025-06-27T00:34:20.040Z,"11 km WSW of Beppu, Japan",earthquake,5.96,1.345,0.147,14,reviewed,us,us
 2025-04-17T20:10:08.720Z,24.348,123.8207,17.225,4.5,mb,69,71,0.379,0.78,us,us6000q6vp,2025-06-27T00:34:20.040Z,"34 km W of Ishigaki, Japan",earthquake,6.4,5.091,0.075,52,reviewed,us,us
 2025-04-17T11:12:26.612Z,31.2478,140.4492,89.164,4.1,mb,28,129,1.938,0.74,us,us7000pwm0,2025-06-27T00:35:00.040Z,"Izu Islands, Japan region",earthquake,6.2,7.607,0.151,13,reviewed,us,us
-2025-04-16T22:16:31.245Z,42.3267,143.0352,65.147,4.5,mb,74,108,0.324,0.55,us,us6000q6mb,2025-06-27T00:34:15.040Z,"22 km WNW of Hiroo, Japan",earthquake,6.18,6.095,0.074,54,reviewed,us,us
-2025-04-16T09:10:37.056Z,24.1201,123.4001,35.415,4.5,mb,31,79,0.495,1.15,us,us7000pw5z,2025-06-27T00:34:54.040Z,"55 km SE of Yonakuni, Japan",earthquake,3.11,9.144,0.128,18,reviewed,us,us
