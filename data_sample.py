@@ -11,7 +11,7 @@ url = "https://earthquake.usgs.gov/fdsnws/event/1/query"
 params = { 
     "format": "csv", 
     "starttime": str(start_date), 
-    "endtime": str(end_date), 
+    "endtime": str(end_date + timedelta(days=1)), 
     "minlatitude": 24, 
     "maxlatitude": 46, 
     "minlongitude": 123, 
@@ -24,7 +24,7 @@ response = requests.get(url, params=params)
 with open("JAPAN_USGS.csv", "w", encoding="utf-8") as f: 
     f.write(response.text) 
 
-url2 = f"https://geofon.gfz.de/eqinfo/list.php?datemin={start_date}&datemax={end_date}&latmax=&lonmin=&lonmax=&latmin=&magmin=4&fmt=html&nmax=1000"
+url2 = f"https://geofon.gfz.de/eqinfo/list.php?datemin={start_date}&datemax={end_date}&latmax=46&lonmin=123&lonmax=146&latmin=24&magmin=4&fmt=html&nmax=1000"
 response2 = requests.get(url2)
 
 
@@ -46,8 +46,8 @@ for data in data_containers:
     Mag.append(selected.group())
 
     region = data.find("strong")
-    if "japan" in region.text or "Japan" in region.text:
-        Region.append(region.text)
+    Region.append(region.text)
+
 
     depth = data.find("span" , class_ = "pull-right")
     selected2 = re.search("[0-9][0-9]", depth.text)
@@ -82,3 +82,4 @@ with open(csv_filename, mode='w', newline='', encoding='utf-8') as file:
 
     for r, m, t, d in zip(final_data["region"], final_data["mag"], final_data["time"], final_data["depth"]):
         writer.writerow([r, m, t, d])
+
