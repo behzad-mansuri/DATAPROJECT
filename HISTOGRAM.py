@@ -4,9 +4,6 @@ import matplotlib.pyplot as plt
 url1 = "https://raw.githubusercontent.com/behzad-mansuri/DATAPROJECT/refs/heads/main/JAPAN_GEOFON.csv"
 df1 = pd.read_csv(url1)
 
-#----STR TO DATE&TIME----
-df1['time'] = pd.to_datetime(df1['time'])
-
 #----DASTE BANDI E SHAHRHA----
 
 df1['city'] = df1['region']
