@@ -85,60 +85,67 @@ class EarthquakeAnalyzer:
     def __init__(self, engine):
         self.engine = engine
 
-    def run_query(self, query, label):
-        print(f"\n{label}")
+    def run_query(self, query, label, writer=None, sheet_name=None):
         try:
             df = pd.read_sql(query, self.engine)
             print(df)
+
+            if writer and sheet_name:
+                df.to_excel(writer, sheet_name=sheet_name, index=False)
+                return df
+            
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error in query '{label}': {e}")
+            return None
+        print(f"1 {sheet_name}")
 
     def analyze(self):
-        self.run_query(text("""
-            SELECT place, source, AVG(mag) AS avg_mag
-            FROM earthquakes
-            GROUP BY place, source
-        """), "Average mag by place and source")
+        with pd.ExcelWriter("earthquake_analysis.xlsx") as writer:
+            self.run_query(text("""
+                SELECT place, source, AVG(mag) AS avg_mag
+                FROM earthquakes
+                GROUP BY place, source
+            """), "Average mag by place and source", writer, "Avg Mag by Place")
 
-        self.run_query(text("""
-            SELECT *
-            FROM earthquakes
-            ORDER BY mag DESC, time DESC
-            LIMIT 10
-        """), "Top 10 strongest earthquakes")
+            self.run_query(text("""
+                SELECT *
+                FROM earthquakes
+                ORDER BY mag DESC, time DESC
+                LIMIT 10
+            """), "Top 10 strongest earthquakes", writer, "Top 10 Quakes")
 
-        self.run_query(text("""
-            SELECT place, EXTRACT(MONTH FROM time) AS month, COUNT(*) AS count
-            FROM earthquakes
-            GROUP BY place, month
-        """), "Earthquake count per place and month")
+            self.run_query(text("""
+                SELECT place, EXTRACT(MONTH FROM time) AS month, COUNT(*) AS count
+                FROM earthquakes
+                GROUP BY place, EXTRACT(MONTH FROM time)
+            """), "Earthquake count per place and month", writer, "Monthly Count")
 
-        self.run_query(text("""
-            SELECT place, MAX(depth) AS max_depth, MIN(depth) AS min_depth
-            FROM earthquakes
-            GROUP BY place
-        """), "Max and Min depth by place")
+            self.run_query(text("""
+                SELECT place, MAX(depth) AS max_depth, MIN(depth) AS min_depth
+                FROM earthquakes
+                GROUP BY place
+            """), "Max and Min depth by place", writer, "Depth by Place")
 
-        self.run_query(text("""
-            SELECT place, COUNT(*) as total
-            FROM earthquakes
-            GROUP BY place
-            ORDER BY total DESC
-            LIMIT 5
-        """), "Top 5 place by earthquake frequency")
+            self.run_query(text("""
+                SELECT place, COUNT(*) as total
+                FROM earthquakes
+                GROUP BY place
+                ORDER BY total DESC
+                LIMIT 5
+            """), "Top 5 place by earthquake frequency", writer, "Most Quakes")
 
-        self.run_query(text("""
-            SELECT EXTRACT(MONTH FROM time) AS month, MAX(mag) AS max_mag
-            FROM earthquakes
-            GROUP BY month
-            ORDER BY month
-        """), "Maximum mag per month")
+            self.run_query(text("""
+                SELECT EXTRACT(MONTH FROM time) AS month, MAX(mag) AS max_mag
+                FROM earthquakes
+                GROUP BY EXTRACT(MONTH FROM time)
+                ORDER BY month
+            """), "Maximum mag per month", writer, "Max Mag Per Month")
 
-        self.run_query(text("""
-            SELECT source, AVG(depth) AS avg_depth
-            FROM earthquakes
-            GROUP BY source
-        """), "Average depth by source")
+            self.run_query(text("""
+                SELECT source, AVG(depth) AS avg_depth
+                FROM earthquakes
+                GROUP BY source
+            """), "Average depth by source", writer, "Avg Depth Per Source")
 
 
 def main():
