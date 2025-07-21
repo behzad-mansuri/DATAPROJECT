@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # ===============================
-#  READ DATA FROM GITHUB
+#  READ DATA 
 # ===============================
 df_usgs = pd.read_csv('JAPAN_USGS.csv')
 df_geofon = pd.read_csv('JAPAN_GEOFON.csv')
@@ -12,8 +12,13 @@ class Visualz:
         self.dfU = df_usgs.copy()
         self.dfG = df_geofon.copy()
 
+<<<<<<< HEAD
         self.dfU['time'] = pd.to_datetime(self.dfU['time'], errors='coerce')
         self.dfU['month'] = self.dfU['time'].dt.to_period('M')
+=======
+        self.df['time'] = pd.to_datetime(self.df['time'], errors='coerce')
+        self.df['month'] = self.df['time'].dt.to_period('M')
+>>>>>>> 31a6b4af6ae7ec374439059fad73681471e1ce55
 
     # ===============================
     #  HISTOGRAM
