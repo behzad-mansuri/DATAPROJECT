@@ -1,115 +1,92 @@
-# ===============================
-#  IMPORT LIBRARIES
-# ===============================
 import pandas as pd
 import matplotlib.pyplot as plt
-# ===============================
-#  READ DATAS
-# ===============================
-#GEOFON
-url = "https://raw.githubusercontent.com/behzad-mansuri/DATAPROJECT/refs/heads/main/JAPAN_USGS.csv"
-df = pd.read_csv(url)
-#USGS
-url1 = "https://raw.githubusercontent.com/behzad-mansuri/DATAPROJECT/refs/heads/main/JAPAN_GEOFON.csv"
-df1 = pd.read_csv(url1)
-# ===============================
-#TIME TO DATE AND TIME AND MONTH
-# ===============================
-df['time'] = pd.to_datetime(df['time'])
-df['month'] = df['time'].dt.to_period('M')
-# ===============================
-#  HISTOGRAM
-# ===============================
-# GROUP OF CITIES
-df1['city'] = df1['region']
-n = 5
-top_cities = df1['city'].value_counts().head(n).index.tolist()
-df1['city_grouped'] = df1['city'].apply(lambda x: x if x in top_cities else 'Others')
-cities = df1['city_grouped'].unique()
 
-plt.figure(figsize=(10, 6))
-
-for city in cities:
-    subset = df1[df1['city_grouped'] == city]
-    plt.hist(
-        subset['mag'], bins=20, alpha=0.5,
-        label=city, edgecolor='black'
-    )
-
-plt.title('Earthquake Magnitude Histogram by City')
-plt.xlabel('Magnitude')
-plt.ylabel('Count')
-plt.grid(True, alpha=0.3)
-plt.legend(title='City')
-plt.tight_layout()
-plt.savefig('histogram_magnitude_by_city_overlay.png')
-plt.show()
 # ===============================
-#  LINE-CHART
+#  READ DATA FROM GITHUB
 # ===============================
-monthly_counts = df.groupby('month').size()
-plt.figure(figsize=(10,6))
-monthly_counts.plot(marker='o', color='darkblue')
-plt.title('Monthly Earthquake Count')
-plt.xlabel('Month')
-plt.ylabel('Number of Earthquakes')
-plt.grid(True, alpha=0.3)
-plt.tight_layout()
-plt.savefig('line_monthly_counts.png')
-plt.show()
-# ===============================
-#  SCATTER
-# ===============================
-plt.figure(figsize=(10,6))
-plt.scatter(df['depth'], df['mag'], alpha=0.5, color='mediumseagreen', edgecolors='black')
-plt.title('Magnitude vs. Depth')
-plt.xlabel('Depth (km)')
-plt.ylabel('Magnitude')
-plt.grid(True, alpha=0.3)
-plt.tight_layout()
-plt.savefig('scatter_mag_vs_depth.png')
-plt.show()
-# ===============================
-#  BOX-PLOT
-# ===============================
-plt.figure(figsize=(10,6))
-plt.boxplot(df['depth'], patch_artist=True, boxprops=dict(facecolor='steelblue', alpha=0.3))
-plt.title('Boxplot of Earthquake Depths')
-plt.ylabel('Depth (km)')
-plt.grid(True, axis='y', alpha=0.3)
-plt.tight_layout()
-plt.savefig('boxplot_depth.png')
-plt.show()
-# ===============================
-#  UNIT TEST
-# ===============================
-print("\n🔍 Simple Data Checks")
+df_usgs = pd.read_csv('JAPAN_USGS.csv')
+df_geofon = pd.read_csv('JAPAN_GEOFON.csv')
 
-# CHECK EMPTY
-if df.empty:
-    raise ValueError("❌ Dataset khali ast!")
+class Visualz:
+    def __init__(self, df_usgs, df_geofon):
+        self.df = df_usgs.copy()
+        self.df1 = df_geofon.copy()
 
-# CHECK COLUMNS
-required_cols = ['mag', 'time']
-for col in required_cols:
-    if col not in df.columns:
-        raise ValueError(f"❌ Sotune zaroori mojood nist: {col}")
+        # تاریخ و ماه
+        self.df['time'] = pd.to_datetime(self.df['time'], errors='coerce')
+        self.df['month'] = self.df['time'].dt.to_period('M')
 
-# CHECK VALUE
-if df['mag'].isnull().any():
-    raise ValueError("❌ Sotune 'mag' meghdare null darad!")
+    # ===============================
+    #  HISTOGRAM
+    # ===============================
+    def g_city(self):
+        self.df1['city'] = self.df1['region']
+        top_cities = self.df1['city'].value_counts().head(5).index.tolist()
+        self.df1['city_grouped'] = self.df1['city'].apply(lambda x: x if x in top_cities else 'Others')
+        return self.df1['city_grouped'].unique()
 
-# CHECK TYPE
-if not pd.api.types.is_numeric_dtype(df['mag']):
-    raise TypeError("❌ 'mag' bayad numeric bashad!")
+    def hist(self):
+        plt.figure(figsize=(10, 6))
+        for city in self.g_city():
+            subset = self.df1[self.df1['city_grouped'] == city]
+            plt.hist(
+                subset['mag'], bins=20, alpha=0.5,
+                label=city, edgecolor='black'
+            )
+        plt.title('Earthquake Magnitude Histogram by City')
+        plt.xlabel('Magnitude')
+        plt.ylabel('Count')
+        plt.grid(True, alpha=0.3)
+        plt.legend(title='City')
+        plt.tight_layout()
+        plt.savefig('histogram_magnitude_by_city_overlay.png')
+        plt.show()
 
-if not pd.api.types.is_datetime64_any_dtype(df['time']):
-    raise TypeError("❌ 'time' bayad datetime bashad!")
+    # ===============================
+    #  LINE-CHART
+    # ===============================
+    def line(self):
+        monthly_counts = self.df.groupby('month').size()
+        plt.figure(figsize=(10, 6))
+        monthly_counts.plot(marker='o', color='darkblue')
+        plt.title('Monthly Earthquake Count')
+        plt.xlabel('Month')
+        plt.ylabel('Number of Earthquakes')
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        plt.savefig('line_monthly_counts.png')
+        plt.show()
 
-# CHECK MEAN
-mean_mag = df['mag'].mean()
-if not (3 <= mean_mag <= 7):
-    raise ValueError(f"❌ Magnitude motavaset gheire mamool: {mean_mag:.2f}")
+    # ===============================
+    #  SCATTER
+    # ===============================
+    def scatter(self):
+        plt.figure(figsize=(10, 6))
+        plt.scatter(
+            self.df['depth'], self.df['mag'],
+            alpha=0.5, color='mediumseagreen', edgecolors='black'
+        )
+        plt.title('Magnitude vs. Depth')
+        plt.xlabel('Depth (km)')
+        plt.ylabel('Magnitude')
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        plt.savefig('scatter_mag_vs_depth.png')
+        plt.show()
 
-print("✅ Hameye check-ha ba movafaghiat anjam shod!")
-
+    # ===============================
+    #  BOX-PLOT
+    # ===============================
+    def box(self):
+        plt.figure(figsize=(10, 6))
+        plt.boxplot(
+            self.df['depth'].dropna(),
+            patch_artist=True,
+            boxprops=dict(facecolor='steelblue', alpha=0.3)
+        )
+        plt.title('Boxplot of Earthquake Depths')
+        plt.ylabel('Depth (km)')
+        plt.grid(True, axis='y', alpha=0.3)
+        plt.tight_layout()
+        plt.savefig('boxplot_depth.png')
+        plt.show()
