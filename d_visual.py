@@ -97,3 +97,4 @@ class Visualz:
         plt.tight_layout()
         plt.savefig('boxplot_depth.png')
         plt.show()
+        # for 100th line
