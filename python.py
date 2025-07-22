@@ -58,7 +58,7 @@ class DatabaseManager:
         df['time']= pd.to_datetime(df['time'], utc=True)
         df['time'] = df['time'].dt.tz_localize(None)
         df['month'] = df['time'].dt.month
-        df.to_sql("earthquakes", con=self.engine, if_exists="append", index=False, chunksize=1000)
+        df.to_sql("earthquakes", con=self.engine, if_exists="replace", index=False, chunksize=1000)
 
     def cleanup_data(self):
         with self.engine.connect() as conn:
@@ -146,6 +146,13 @@ class EarthquakeAnalyzer:
                 FROM earthquakes
                 GROUP BY source
             """), "Average depth by source", writer, "Avg Depth Per Source")
+
+            self.run_query(text("""
+                SELECT source, COUNT(*) AS low_mag_count
+                FROM earthquakes
+                WHERE mag < 4.5
+                GROUP BY source;                
+                """), "Earthquakes < 4.5 by source", writer, "low mag count")
 
 
 def main():
