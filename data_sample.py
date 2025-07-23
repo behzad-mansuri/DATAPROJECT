@@ -3,7 +3,8 @@ import requests
 from datetime import datetime, timedelta 
 import re
 import csv 
- 
+import matplotlib.pyplot as plt
+
 end_date = datetime.today().date() 
 start_date = end_date - timedelta(days=90) 
  
@@ -31,7 +32,7 @@ response2 = requests.get(url2)
 
 soup = BeautifulSoup(response2.content , "html.parser")
 
-data_containers = soup.find_all("div" , class_= lambda items : items is not None and "flex-row row eqinfo-all" in items)
+data_containers = soup.find_all("div" , class_= lambda items : items is not None and "flex-row row" in items)
 
 
 Mag=[]
@@ -42,11 +43,13 @@ Time = []
 for data in data_containers:
     mag = data.find("span" , class_ = "magbox")
     pattern = r'\b\d+\.\d+\b'
-    selected = re.search(pattern , mag.text)
-    Mag.append(selected.group())
+    if mag is not None:
+        selected = re.search(pattern ,mag.text)
+        Mag.append(selected.group())
 
     region = data.find("strong")
-    Region.append(region.text)
+    if region is not None:
+        Region.append(region.text)
 
 
     depth = data.find("span" , class_ = "pull-right")
@@ -58,7 +61,7 @@ for data in data_containers:
     result_text = ''.join(texts)
     Time.append(result_text.strip())
 
-
+Time.pop(0)
 
 final_data = {"mag" : Mag , "region" : Region , "time" : Time , "depth" : Depth}
 
