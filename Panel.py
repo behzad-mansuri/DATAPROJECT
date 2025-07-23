@@ -74,7 +74,6 @@ while True:
             print("3.Line chart")
             print("4.Scatter plot")
             print("5.Boxplot")
-            print("6.Heatmap")
             name = input()
 
             df_usgs = pd.read_csv('JAPAN_USGS.csv')
@@ -114,15 +113,6 @@ while True:
                     break
                 elif a == "1":
                     vis.box()
-
-            elif name == "6":
-                #کد هیت مپ
-                print("Please enter 1 to return or 0 to show panel" )
-                a = input()
-                if a == "0":
-                    break
-                elif a == "1":
-                    pass
             
             else:
                 print("Wrong package!")
