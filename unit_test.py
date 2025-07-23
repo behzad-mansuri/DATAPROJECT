@@ -91,8 +91,15 @@ class TestEarthquakeCSV(unittest.TestCase):
             valA = float(row['avg_mag'])
             self.assertTrue(4 <= valA <= 6)
 
+<<<<<<< HEAD
 samp =TestEarthquakeCSV()
 samp.setUp()
 samp.test_column_count()
 samp.test_mag_is_numeric()
 samp.test_mean()
+=======
+def Test_main():
+    return unittest.main()
+
+
+>>>>>>> final_state

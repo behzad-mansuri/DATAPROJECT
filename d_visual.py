@@ -1,5 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+<<<<<<< HEAD
+=======
+#UserWarning: Converting to PeriodArray/Index representation will drop timezone information
+import warnings
+>>>>>>> final_state
 
 # ===============================
 #  READ DATA 
@@ -11,8 +16,13 @@ class Visualz:
     def __init__(self, df_usgs, df_geofon):
         self.df = df_usgs.copy()
         self.dfG = df_geofon.copy()
+<<<<<<< HEAD
 
         self.df['time'] = pd.to_datetime(self.df['time'], errors='coerce')
+=======
+        self.df['time'] = pd.to_datetime(self.df['time'], errors='coerce')
+        warnings.simplefilter(action='ignore', category=UserWarning)
+>>>>>>> final_state
         self.df['month'] = self.df['time'].dt.to_period('M')
 
     # ===============================
